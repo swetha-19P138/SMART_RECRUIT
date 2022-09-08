@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> GET STARTED </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+body{
+  background-color: #261058; 
+  
+  background-image:url("./images/registration.jpg");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+   height:100vh;
+
+   margin:0;
+}
+.container{
+ background-color:transparent;
+ border-radius: 5px ;
+ box-shadow : 10px 20px 25px rgba(0,0,0,0.3);
+ overflow:hidden;
+  max-width:100%;
+ width:400px;
+}
+.input-control {
+   display: flex;
+   flex-direction: column;
+     margin : 10px;
+     padding :  20px;
+     position:  relative;
+
+}
+.input-control label{
+   
+   display:inline-block;
+   margin-bottom:5px;
+
+}
+.input-control input{
+   border:2px solid #f0f0f0;
+   border-radius : 4px;
+   display : block;
+   font-size:14px;
+   padding : 10px;
+   width:100%;
+   background-color:green;
+   
+   
+}
+.input-control i{
+    
+}
+input[type="file"] {
+    display: none;
+    color:green;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+h1{
+    font-size:30px;
+    text-align: center;
+    font-weight:900px;
+}
+.form{
+    padding:30px 40px;
+
+ }
+
+ .input-control input:focus {
+   outline: 0;
+}
+
+.input-control.success input {
+   border-color: #09c372;
+}
+
+.input-control.error input {
+   border-color: #ff3860;
+}
+
+.input-control .error {
+   color: #ff3860;
+   font-size: 9px;
+   height: 13px;
+}
+ .input-control i{
+        visibility: visible;
+        
+ }
+
+ label{
+    background-color: #261058 ;
+  color: white;
+  padding: 0.5rem;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+ }
+
+
+
+    </style>
+<body>
+   
+    <div class="container">
+        <h1>UPLOAD YOUR RESUME </h1>
+    <form class="form" id="form">
+        <div class="input-control">
+            <i class="fa-solid fa-file-arrow-up"> </i>
+       
+        
+    </label>
+    
+   <input type="file" id="actual-btn" hidden/> 
+   <label for="actual-btn">Choose File</label> 
+
+        </div>
+    </form>
+</div>   
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    </html>
